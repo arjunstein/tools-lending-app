@@ -1,6 +1,8 @@
 <?php
 
+use App\Livewire\Auth\Login;
 use Illuminate\Support\Facades\Route;
+use App\Livewire\Dashboard\Index as DashboardIndex;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +16,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('auth/login');
 });
+
+Route::prefix('backend')->middleware('auth')->group(function () {
+    Route::get('/dashboard', DashboardIndex::class)->name('dashboard');
+});
+
+Route::get('/auth/login', Login::class)->name('login')->middleware('guest');

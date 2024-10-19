@@ -8,7 +8,7 @@ use Livewire\Component;
 
 class EditCategory extends Component
 {
-    #[Title('Edit Kategori')]
+    #[Title('Edit category')]
     public $category_name;
     public $id;
 
@@ -33,7 +33,7 @@ class EditCategory extends Component
     public function render()
     {
         return view('livewire.category.edit-category', [
-            'title' => 'Edit Kategori'
+            'title' => 'Edit category'
         ]);
     }
 

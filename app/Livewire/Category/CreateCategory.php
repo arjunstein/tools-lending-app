@@ -8,7 +8,7 @@ use Livewire\Component;
 
 class CreateCategory extends Component
 {
-    #[Title('Buat Kategori')]
+    #[Title('Create category')]
     public $category_name;
 
     protected $rules = [
@@ -25,7 +25,7 @@ class CreateCategory extends Component
     public function render()
     {
         return view('livewire.category.create-category', [
-            'title' => 'Buat kategori'
+            'title' => 'Create category'
         ]);
     }
 

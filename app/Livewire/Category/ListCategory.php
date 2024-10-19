@@ -12,7 +12,7 @@ class ListCategory extends Component
 {
     use WithPagination;
 
-    #[Title('List Kategori')]
+    #[Title('All categories')]
     #[Url()]
 
     public $search = '';
@@ -26,7 +26,7 @@ class ListCategory extends Component
     {
         return view('livewire.category.list-category', [
             'categories' => $this->getCategory(),
-            'title' => 'List Kategori'
+            'title' => 'All categories',
         ]);
     }
 

@@ -21,8 +21,8 @@ class Login extends Component
     ];
 
     protected $messages = [
-        'username.required' => 'username wajib diisi',
-        'password.required' => 'Password wajib diisi',
+        'username.required' => 'Username is required',
+        'password.required' => 'Password is required',
     ];
 
     public function updated($propertyName)
@@ -41,7 +41,7 @@ class Login extends Component
         } else {
             // Jika autentikasi gagal, lemparkan exception
             throw ValidationException::withMessages([
-                'username' => 'Username atau password salah',
+                'username' => 'Invalid username or password',
             ]);
         }
     }

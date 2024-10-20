@@ -8,7 +8,7 @@
                         <li>
                             <div class="flex items-center">
                                 <a href="#"
-                                    class="ml-1 text-gray-700 hover:text-primary-600 md:ml-2 dark:text-gray-300 dark:hover:text-white">Categories</a>
+                                    class="ml-1 text-gray-700 hover:text-primary-600 md:ml-0 dark:text-gray-300 dark:hover:text-white">Categories</a>
                             </div>
                         </li>
                         <li>
